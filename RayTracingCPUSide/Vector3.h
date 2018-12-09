@@ -30,8 +30,8 @@ public:
 
 	void Normalise();
 
-	Vector3 Cross(const Vector3&);
-	float Dot(const Vector3& v);
+	Vector3 Cross(const Vector3&) const;
+	float Dot(const Vector3& v) const;
 };
 
 //------------OPERATOR OVERLOADS------------//

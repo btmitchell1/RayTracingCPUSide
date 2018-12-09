@@ -5,21 +5,25 @@
 class Ray
 {
 public:
-	Vector3 mOrigin;
-	Vector3 mDirection;
+	Vector3 origin;
+	Vector3 direction;
 
-	Ray() {}
-
-	// Without both parameters, origin defaults to 0,0,0
-	Ray(Vector3 direction)
+	Ray() 
 	{
-		mOrigin = { 0.0f, 0.0f, 0.0f };
-		mDirection = direction;
+		origin = { 0.0f, 0.0f, 0.0f };
+		direction = { 0.0f, 0.0f, 0.0f };
 	}
 
-	Ray(Vector3 origin, Vector3 direction)
+	// Without both parameters, origin defaults to 0,0,0
+	Ray(Vector3 nDirection)
 	{
-		mOrigin = origin;
-		mDirection = direction;
+		origin = { 0.0f, 0.0f, 0.0f };
+		direction = direction;
+	}
+
+	Ray(Vector3 nOrigin, Vector3 nDirection)
+	{
+		origin = origin;
+		direction = direction;
 	}
 };
